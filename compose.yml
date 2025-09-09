@@ -1,0 +1,9 @@
+services:
+  dbt_duckdb:
+    build: .
+    container_name: dbt_duckdb
+    volumes:
+      - .:/dbt-tutorial
+      - ~/.dbt:/root/.dbt
+    working_dir: /dbt-tutorial
+    tty: true

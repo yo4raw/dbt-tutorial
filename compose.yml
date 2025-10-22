@@ -1,7 +1,7 @@
 services:
-  dbt_duckdb:
+  dbt-tutorial:
     build: .
-    container_name: dbt_duckdb
+    container_name: dbt-tutorial
     volumes:
       - .:/dbt-tutorial
       - ~/.dbt:/root/.dbt

@@ -20,5 +20,3 @@ RUN pip install --upgrade pip && \
 WORKDIR /dbt-tutorial
 
 COPY . /dbt-tutorial
-
-CMD ["tail", "-f", "/dev/null"]
